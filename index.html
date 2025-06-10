@@ -5,429 +5,379 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nirmaan | BITS Pilani Chapter</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero-pattern {
+      background-image: radial-gradient(#fef08a 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .project-card {
+      transition: all 0.3s ease;
+      border-left: 4px solid #f59e0b;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-xl font-bold text-yellow-600">Nirmaan</div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-gray-700 hover:text-yellow-600 transition">About</a>
+        <a href="#projects" class="text-gray-700 hover:text-yellow-600 transition">Projects</a>
+        <a href="#events" class="text-gray-700 hover:text-yellow-600 transition">Events</a>
+        <a href="#contact" class="text-gray-700 hover:text-yellow-600 transition">Contact</a>
+      </div>
+      <button class="md:hidden text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <section class="bg-yellow-100 py-20 px-6 text-center">
-    <h1 class="text-4xl md:text-6xl font-bold text-gray-900">Nirmaan</h1>
-    <p class="mt-4 text-xl md:text-2xl max-w-2xl mx-auto">Pilani Chapter | Empowering Through Education, Women Empowerment, and Community Development</p>
+  <section class="hero-pattern py-24 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Nirmaan</h1>
+      <p class="text-xl md:text-2xl text-gray-700 mb-8">Pilani Chapter | Empowering Through Education, Women Empowerment, and Community Development</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#projects" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-md">
+          Our Projects
+        </a>
+        <a href="#contact" class="border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-50 font-medium py-2 px-6 rounded-full transition duration-300">
+          Contact Us
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-4">About Us</h2>
-    <p class="text-lg leading-relaxed">
-      Nirmaan serves as a beacon of hope within society, deeply rooted in humanitarian principles. It nurtures a vibrant community of dedicated volunteers who work tirelessly to effect transformative change. The organization embodies unwavering commitment, resilience, hard work, and a profound emotional journey of both tears and joy.
-    </p>
-    <p class="text-lg leading-relaxed mt-4">
-      Since its modest beginnings in 2005, Nirmaan has grown remarkably, extending its reach to empower individuals and achieve unprecedented heights. As it celebrates its 20th anniversary, we reflect on a transformative journey where Nirmaan’s selfless volunteers have devoted themselves to uplifting and empowering the local residents of Pilani.
-    </p>
-    <p class="text-lg leading-relaxed mt-4">
-      At its core, Nirmaan has 11 dynamic projects, with over 150 volunteers actively contributing to societal betterment. These initiatives focus on education, women empowerment, and community development, with their cumulative impact being immeasurable. The organization has achieved significant milestones and made notable strides, all thanks to the unwavering dedication of student volunteers from BITS Pilani.
-    </p>
+  <section id="about" class="py-16 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4 relative inline-block">
+        <span class="relative z-10">About Us</span>
+        <span class="absolute bottom-0 left-0 w-full h-2 bg-yellow-200 z-0" style="bottom: 5px;"></span>
+      </h2>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-8">
+      <p class="text-lg leading-relaxed mb-6">
+        Nirmaan serves as a beacon of hope within society, deeply rooted in humanitarian principles. It nurtures a vibrant community of dedicated volunteers who work tirelessly to effect transformative change. The organization embodies unwavering commitment, resilience, hard work, and a profound emotional journey of both tears and joy.
+      </p>
+      <p class="text-lg leading-relaxed mb-6">
+        Since its modest beginnings in 2005, Nirmaan has grown remarkably, extending its reach to empower individuals and achieve unprecedented heights. As it celebrates its 20th anniversary, we reflect on a transformative journey where Nirmaan's selfless volunteers have devoted themselves to uplifting and empowering the local residents of Pilani.
+      </p>
+      <p class="text-lg leading-relaxed">
+        At its core, Nirmaan has 11 dynamic projects, with over 150 volunteers actively contributing to societal betterment. These initiatives focus on education, women empowerment, and community development, with their cumulative impact being immeasurable. The organization has achieved significant milestones and made notable strides, all thanks to the unwavering dedication of student volunteers from BITS Pilani.
+      </p>
+    </div>
   </section>
 
   <!-- Projects Section -->
-  <section class="bg-white py-16 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-10">Our Projects</h2>
-    <div class="grid grid-cols-1 gap-12">
-      <div>
-        <h3 class="font-bold text-xl mb-2">School Adoption Program (SAP)</h3>
-        <p class="mb-2">The School Adoption Program (SAP) is one of the six education projects in Nirmaan. SAP aims to improve the learning environment of government schools by providing resources, infrastructure upgrades, and to enhance the overall education standard. Our ultimate goal is to provide enough comprehensive support to the schools so that they can eventually become self-reliant and sustain the improvements on their own.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>The primary school previously hosted mid-day meals in the open. In response to the challenges posed by harsh weather conditions, SAP successfully constructed a shed to provide a safe and comfortable space for the children to enjoy their meals.</li>
-          <li>The library, whose construction began last year has been
-            completed and furnished with more than 100 books,. A variety
-            of books, ranging from Hindi novels and children's books to
-            educational materials, have been added to cater to every
-            child's needs.</li>
-          <li>Regular teaching shifts were conducted that focused on
-            learning new concepts, revision of previously taught
-            coursework, clearing any doubts and regularly providing
-            new homework.</li>
-        </ul>
+  <section id="projects" class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4 relative inline-block">
+          <span class="relative z-10">Our Projects</span>
+          <span class="absolute bottom-0 left-0 w-full h-2 bg-yellow-200 z-0" style="bottom: 5px;"></span>
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Discover the various initiatives we've undertaken to make a difference in our community</p>
       </div>
+      
+      <div class="grid grid-cols-1 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">School Adoption Program (SAP)</h3>
+          <p class="mb-4 text-gray-700">The School Adoption Program (SAP) is one of the six education projects in Nirmaan. SAP aims to improve the learning environment of government schools by providing resources, infrastructure upgrades, and to enhance the overall education standard. Our ultimate goal is to provide enough comprehensive support to the schools so that they can eventually become self-reliant and sustain the improvements on their own.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>The primary school previously hosted mid-day meals in the open. In response to the challenges posed by harsh weather conditions, SAP successfully constructed a shed to provide a safe and comfortable space for the children to enjoy their meals.</li>
+            <li>The library, whose construction began last year has been completed and furnished with more than 100 books,. A variety of books, ranging from Hindi novels and children's books to educational materials, have been added to cater to every child's needs.</li>
+            <li>Regular teaching shifts were conducted that focused on learning new concepts, revision of previously taught coursework, clearing any doubts and regularly providing new homework.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Utkarsh</h3>
-        <p>Utkarsh is another project under the education domain.
-            Volunteers identify and support underprivileged students with
-            exceptional academic potential who are forced to discontinue
-            their education due to financial constraints. We seek
-            scholarships for these students by raising funds from faculty
-            on campus. Additionally, we collaborate with other projects
-            that encounter such children during their operations.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>Students were identified by visiting nearby schools, and
-            their academic records and financial backgrounds were
-            thoroughly checked to verify their eligibility.</li>
-          <li>Nearly 100 children benefited from this project last year,
-            with aims to significantly increase this number moving
-            forward.</li>
-        </ul>
-      </div>
+        <!-- Project 2 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Utkarsh</h3>
+          <p class="mb-4 text-gray-700">Utkarsh is another project under the education domain. Volunteers identify and support underprivileged students with exceptional academic potential who are forced to discontinue their education due to financial constraints. We seek scholarships for these students by raising funds from faculty on campus. Additionally, we collaborate with other projects that encounter such children during their operations.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>Students were identified by visiting nearby schools, and their academic records and financial backgrounds were thoroughly checked to verify their eligibility.</li>
+            <li>Nearly 100 children benefited from this project last year, with aims to significantly increase this number moving forward.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Disha</h3>
-        <p>The Disha program is an educational initiative aimed at career
-            counseling. It seeks to educate the students of grade 9 of the
-            school Hemant Academy about long-term goals including
-            career.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>Volunteers make daily 1-hour visits to the school in pairs or
-            groups of 3 counseling 3-4 students at a time about careers
-            and activities.</li>
-          <li>A collaborative session with PKP was conducted wherein
-            students from the target Basti were informed about career.</li>
-        </ul>
-      </div>
+        <!-- Project 3 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Disha</h3>
+          <p class="mb-4 text-gray-700">The Disha program is an educational initiative aimed at career counseling. It seeks to educate the students of grade 9 of the school Hemant Academy about long-term goals including career.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>Volunteers make daily 1-hour visits to the school in pairs or groups of 3 counseling 3-4 students at a time about careers and activities.</li>
+            <li>A collaborative session with PKP was conducted wherein students from the target Basti were informed about career.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Shiksha Ki Ore (SKO)</h3>
-        <p>Shiksha Ki Ore (SKO) is another education project of Nirmaan,
-            intending to offer quality education to children residing in
-            rural areas, foster community development, and prevent child
-            marriage. Its endeavors are presently channeled into ensuring
-            access to education for the children of Natt Basti, a settlement
-            2-3 km away from the BITS Pilani campus that the
-            organization has adopted. It also focuses on helping the
-            residents live a healthy, happy childhood.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>Stories from the Ramayan were shared with the children
-            during Diwali, enriching their cultural knowledge and
-            understanding of the festival's significance. On Gandhi
-            Jayanti, a cleanliness drive was organized in the basti,
-            emphasizing the importance of cleanliness and paying
-            homage to Mahatma Gandhi's principles. Holi, the festival
-            of colors, was celebrated with enthusiasm, bringing joy and
-            unity among the community members. Republic Day was
-            marked by a poster-making competition, encouraging the
-            children to express their patriotism and creativity.</li>
-          <li>6 students from the basti were admitted to schools under
-            the RTE (Right to Education) Act, ensuring they have access
-            to quality education. Additionally, a basti child successfully
-            passed the 8th grade.</li>
-          <li>Community engagement activities included a farewell
-            event for project seniors, during which the basti children
-            visited the BITS campus. They explored the Saraswati
-            Temple, learning about its cultural significance, and
-            attended a lecture by a BITS professor, exposing them to
-            higher education and inspiring their academic aspirations.
-            On the occasion of Basant Panchmi, the children visited a
-            mela (town fair), giving them a fun and enriching
-            experience that also celebrated the onset of spring.
-            Volunteers also successfully handled a child marriage case
-            involving three girls in the basti, ensuring their safety and
-            preventing the marriage from taking place.</li>
-        </ul>
-      </div>
+        <!-- Project 4 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Shiksha Ki Ore (SKO)</h3>
+          <p class="mb-4 text-gray-700">Shiksha Ki Ore (SKO) is another education project of Nirmaan, intending to offer quality education to children residing in rural areas, foster community development, and prevent child marriage. Its endeavors are presently channeled into ensuring access to education for the children of Natt Basti, a settlement 2-3 km away from the BITS Pilani campus that the organization has adopted. It also focuses on helping the residents live a healthy, happy childhood.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>Stories from the Ramayan were shared with the children during Diwali, enriching their cultural knowledge and understanding of the festival's significance. On Gandhi Jayanti, a cleanliness drive was organized in the basti, emphasizing the importance of cleanliness and paying homage to Mahatma Gandhi's principles. Holi, the festival of colors, was celebrated with enthusiasm, bringing joy and unity among the community members. Republic Day was marked by a poster-making competition, encouraging the children to express their patriotism and creativity.</li>
+            <li>6 students from the basti were admitted to schools under the RTE (Right to Education) Act, ensuring they have access to quality education. Additionally, a basti child successfully passed the 8th grade.</li>
+            <li>Community engagement activities included a farewell event for project seniors, during which the basti children visited the BITS campus. They explored the Saraswati Temple, learning about its cultural significance, and attended a lecture by a BITS professor, exposing them to higher education and inspiring their academic aspirations. On the occasion of Basant Panchmi, the children visited a mela (town fair), giving them a fun and enriching experience that also celebrated the onset of spring. Volunteers also successfully handled a child marriage case involving three girls in the basti, ensuring their safety and preventing the marriage from taking place.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Gyan Bodh Baas</h3>
-        <p>Gyan Bodh baas (GB baas) is another project of Nirmaan that
-            aims to revamp the standard of education. At present GB bass
-            is focused on improving education systems and providing
-            access to quality education and expanding access to learning
-            opportunities, especially in underserved areas.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>A new curriculum was implemented which helped the
-            volunteers make studying more engaging and fun. Schools
-            and learning centers were maintained, and after-school
-            tutoring and homework help were organized.</li>
-          <li>Community engagement and awareness efforts included
-            conducting workshops on generating sources of income,
-            the importance of education, hygiene, and other essential
-            topics.</li>
-        </ul>
-      </div>
+        <!-- Project 5 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Gyan Bodh Baas</h3>
+          <p class="mb-4 text-gray-700">Gyan Bodh baas (GB baas) is another project of Nirmaan that aims to revamp the standard of education. At present GB bass is focused on improving education systems and providing access to quality education and expanding access to learning opportunities, especially in underserved areas.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>A new curriculum was implemented which helped the volunteers make studying more engaging and fun. Schools and learning centers were maintained, and after-school tutoring and homework help were organized.</li>
+            <li>Community engagement and awareness efforts included conducting workshops on generating sources of income, the importance of education, hygiene, and other essential topics.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Pilani Ki Paathshala (PKP)</h3>
-        <p>Pilani ki Paathshala (PKP) is another project under the
-            education domain of Nirmaan. Volunteers functions as
-            mentors and tutors to the children of the Mungda basti that
-            the project has adopted. The primary goal is to foster the
-            educational growth of the children who benefited from this
-            project. Volunteers also strived to bond with the children,
-            encouraging them to share both academic and non-academic
-            problems they faced in their day-to-day lives.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>The project visited the basti 4-5 times per week, teaching
-            10-15 children basic Maths and English. Later, general
-            knowledge and social studies was also included. Four major
-            tests (two per semester) attracted over 15 children each,
-            who enjoyed showcasing their knowledge.</li>
-          <li>During the year, several initiatives were undertaken to
-            enhance education and community engagement. On
-            Gandhi Jayanti, a cleanliness drive educated children about
-            hygiene, involved cleaning the area, and provided hygiene
-            kits. Dussehra featured a drawing workshop where children
-            depicted mythological characters, while Diwali included an
-            eco-friendly origami lantern-making workshop and a diya
-            lighting ceremony.</li>
-          <li>Republic Day was marked by a quiz and speeches on
-            India's freedom struggle, fostering patriotism. A career
-            guidance workshop with 'Disha' exposed children to
-            opportunities beyond their community. The project earned
-            the "Best Project of the Semester" award.</li>
-          <li>
-            Efforts to improve online infrastructure included creating a
-            WhatsApp group for parents to share educational
-resources. Volunteers produced videos about the children's
-hometowns to broaden their horizons. Approximately 85
-visits were made across both semesters to provide
-consistent support.
-          </li>
-        </ul>
-      </div>
+        <!-- Project 6 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Pilani Ki Paathshala (PKP)</h3>
+          <p class="mb-4 text-gray-700">Pilani ki Paathshala (PKP) is another project under the education domain of Nirmaan. Volunteers functions as mentors and tutors to the children of the Mungda basti that the project has adopted. The primary goal is to foster the educational growth of the children who benefited from this project. Volunteers also strived to bond with the children, encouraging them to share both academic and non-academic problems they faced in their day-to-day lives.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>The project visited the basti 4-5 times per week, teaching 10-15 children basic Maths and English. Later, general knowledge and social studies was also included. Four major tests (two per semester) attracted over 15 children each, who enjoyed showcasing their knowledge.</li>
+            <li>During the year, several initiatives were undertaken to enhance education and community engagement. On Gandhi Jayanti, a cleanliness drive educated children about hygiene, involved cleaning the area, and provided hygiene kits. Dussehra featured a drawing workshop where children depicted mythological characters, while Diwali included an eco-friendly origami lantern-making workshop and a diya lighting ceremony.</li>
+            <li>Republic Day was marked by a quiz and speeches on India's freedom struggle, fostering patriotism. A career guidance workshop with 'Disha' exposed children to opportunities beyond their community. The project earned the "Best Project of the Semester" award.</li>
+            <li>Efforts to improve online infrastructure included creating a WhatsApp group for parents to share educational resources. Volunteers produced videos about the children's hometowns to broaden their horizons. Approximately 85 visits were made across both semesters to provide consistent support.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Unnati</h3>
-        <p>Unnati is a project under the Nirmaan dedicated to
-            empowering women. Our mission is to guide beneficiaries in
-            establishing sustainable businesses through skill development,
-            mentorship, and resource access. Women acquire skills like
-            stitching and jewelry making, creating products such as jute
-            handbags, bracelets, and organic Holi colors. Unnati stands as
-            a beacon of hope, fostering a society where women are strong
-            and self-reliant.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>The "Rangmanch" event for Holi was a great success.
-            Women beneficiaries made organic colors from locally
-            sourced materials like corn starch and rose water. These
-            colors were sold to students and professors on campus,
-            with 220 kg sold through pre-orders and on-spot signings.</li>
-            <li>Handmade bracelets were crafted for the Apogee stall
-                using locally sourced materials from Pilani. All 84 bracelets
-                made were sold successfully.</li>
-        </ul>
-      </div>
+        <!-- Project 7 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Unnati</h3>
+          <p class="mb-4 text-gray-700">Unnati is a project under the Nirmaan dedicated to empowering women. Our mission is to guide beneficiaries in establishing sustainable businesses through skill development, mentorship, and resource access. Women acquire skills like stitching and jewelry making, creating products such as jute handbags, bracelets, and organic Holi colors. Unnati stands as a beacon of hope, fostering a society where women are strong and self-reliant.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>The "Rangmanch" event for Holi was a great success. Women beneficiaries made organic colors from locally sourced materials like corn starch and rose water. These colors were sold to students and professors on campus, with 220 kg sold through pre-orders and on-spot signings.</li>
+            <li>Handmade bracelets were crafted for the Apogee stall using locally sourced materials from Pilani. All 84 bracelets made were sold successfully.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Swayamshakti</h3>
-        <p>Swayamshakti is a project under the Women Empowerment
-            domain of Nirmaan. The group of volunteers helps rural
-            women from Pilani and surrounding areas acquire skills such
-            as stitching, weaving, and embroidery. They create products
-            like scrunchies, cushions, and tote bags, which are sold at
-            college fest stalls. The goal is to empower these women to
-            become independent and contribute to their families'
-            incomes.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>Throughout the year, several fundraising initiatives were
-            undertaken, each yielding notable profits. During Rakhi, a
-            stall at Akshay Supermarket showcased handmade rakhis.
-            At Oasis, a stall in Krishna parking sold tote bags,
-            scrunchies, and cushions. For Diwali, Project Roshni, in
-            collaboration with Cisco, sold hand-painted diyas at Akshay
-            Mart over three days, successfully clearing most of the
-            inventory.</li>
-          <li>The Holi Kurta-Making project empowered women
-            beneficiaries at the PARC center, resulting in substantial
-            profits. During APOGEE, handbags, modified scrunchies,
-            and earrings were sold, yielding considerable profits from a
-            modest initial investment.</li>
-            <li>On Gandhi Jayanti, an informative session at the
-                Swayamshakti room in the PARC center focused on
-                cleanliness and menstrual hygiene. The session aimed to
-                educate women and break taboos, using presentations,
-                videos, and photos to enhance understanding, followed by
-                a question-and-answer session.</li>
-                <li>A certificate distribution ceremony was held on October 1st
-                    to recognize the efforts of the women beneficiaries.
-                    Attended by PARC authority members, the Pilani
-                    panchayat, and BITS alumni, the event included speeches
-                    by officials and distributed certificates to all women
-                    beneficiaries, boosting their morale and acknowledging
-                    their achievements.</li>
-        </ul>
-      </div>
+        <!-- Project 8 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Swayamshakti</h3>
+          <p class="mb-4 text-gray-700">Swayamshakti is a project under the Women Empowerment domain of Nirmaan. The group of volunteers helps rural women from Pilani and surrounding areas acquire skills such as stitching, weaving, and embroidery. They create products like scrunchies, cushions, and tote bags, which are sold at college fest stalls. The goal is to empower these women to become independent and contribute to their families' incomes.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>Throughout the year, several fundraising initiatives were undertaken, each yielding notable profits. During Rakhi, a stall at Akshay Supermarket showcased handmade rakhis. At Oasis, a stall in Krishna parking sold tote bags, scrunchies, and cushions. For Diwali, Project Roshni, in collaboration with Cisco, sold hand-painted diyas at Akshay Mart over three days, successfully clearing most of the inventory.</li>
+            <li>The Holi Kurta-Making project empowered women beneficiaries at the PARC center, resulting in substantial profits. During APOGEE, handbags, modified scrunchies, and earrings were sold, yielding considerable profits from a modest initial investment.</li>
+            <li>On Gandhi Jayanti, an informative session at the Swayamshakti room in the PARC center focused on cleanliness and menstrual hygiene. The session aimed to educate women and break taboos, using presentations, videos, and photos to enhance understanding, followed by a question-and-answer session.</li>
+            <li>A certificate distribution ceremony was held on October 1st to recognize the efforts of the women beneficiaries. Attended by PARC authority members, the Pilani panchayat, and BITS alumni, the event included speeches by officials and distributed certificates to all women beneficiaries, boosting their morale and acknowledging their achievements.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Pragati</h3>
-        <p>Pragati is a project based on the VTC model under the domain
-            of Women Empowerment with the goal of instilling selfconfidence and independence In women in rural India by
-            equipping them with the knowledge and means to pursue a
-            profession. Interactive training sessions are organized by the
-            team and focused on teaching and developing beneficiaries'
-            embroidery skills, painting skills and many more to making
-            salable products and help them to generate revenue. </p>
-        <ul class="list-disc list-inside ml-4">
-          <li>Beneficiaries received training sessions on lipin art and
-            attended talks on menstrual hygiene and cleanliness.
-            Project Rakhi, in collaboration with Swayamshakti, resulted
-            in the sale of 200 rakhis, generating significant profits. The
-            OASIS event saw strong sales of saplings, lamps, and
-            baskets.</li>
-          <li>During Diwali, Project Roshni, also in collaboration with
-            Swayamshakti, sold out all diyas, boosting beneficiaries'
-            confidence and production. The APOGEE event featured
-            high demand for lipin art and saplings, leading to
-            considerable profits. An interactive talk with GB Bass
-            educated women beneficiaries on fundamental rights and
-            financial management.</li>
-        </ul>
-      </div>
+        <!-- Project 9 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Pragati</h3>
+          <p class="mb-4 text-gray-700">Pragati is a project based on the VTC model under the domain of Women Empowerment with the goal of instilling selfconfidence and independence In women in rural India by equipping them with the knowledge and means to pursue a profession. Interactive training sessions are organized by the team and focused on teaching and developing beneficiaries' embroidery skills, painting skills and many more to making salable products and help them to generate revenue.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>Beneficiaries received training sessions on lipin art and attended talks on menstrual hygiene and cleanliness. Project Rakhi, in collaboration with Swayamshakti, resulted in the sale of 200 rakhis, generating significant profits. The OASIS event saw strong sales of saplings, lamps, and baskets.</li>
+            <li>During Diwali, Project Roshni, also in collaboration with Swayamshakti, sold out all diyas, boosting beneficiaries' confidence and production. The APOGEE event featured high demand for lipin art and saplings, leading to considerable profits. An interactive talk with GB Bass educated women beneficiaries on fundamental rights and financial management.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Participatory Community Development</h3>
-        <p>The Participatory Community Development project of Nirmaan
-            works with the residents of bastis in and around Pilani to
-            improve their quality of life and equip them with basic day-today necessities. This seeks to engage local populations in
-            development projects in order to make the projects more
-            sustainable and successful. </p>
-        <ul class="list-disc list-inside ml-4">
-          <li>Two toilets in Bhootnath basti and one toilet in Monti
-            Dhaba basti were constructed, improving sanitation for
-            over 70 residents.</li>
-          <li>A comprehensive basti profiling for Bhootnath basti
-            provided valuable insights for future projects.</li>
-          <li>Three distribution drives were conducted in Bhootnath
-            basti, distributing items collected from previous outgoing
-            batches.</li>
-          <li>Medical supplies were donated to an under-served family
-            in Pilani.</li>
-          <li>A successful faculty-wide collection drive gathered unused
-            articles for the needy, earning appreciation from faculty
-            members.</li>
-        </ul>
-      </div>
+        <!-- Project 10 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Participatory Community Development</h3>
+          <p class="mb-4 text-gray-700">The Participatory Community Development project of Nirmaan works with the residents of bastis in and around Pilani to improve their quality of life and equip them with basic day-to-day necessities. This seeks to engage local populations in development projects in order to make the projects more sustainable and successful.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>Two toilets in Bhootnath basti and one toilet in Monti Dhaba basti were constructed, improving sanitation for over 70 residents.</li>
+            <li>A comprehensive basti profiling for Bhootnath basti provided valuable insights for future projects.</li>
+            <li>Three distribution drives were conducted in Bhootnath basti, distributing items collected from previous outgoing batches.</li>
+            <li>Medical supplies were donated to an under-served family in Pilani.</li>
+            <li>A successful faculty-wide collection drive gathered unused articles for the needy, earning appreciation from faculty members.</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="font-bold text-xl mb-2">Udaan</h3>
-        <p>Project Udaan is aimed at youth empowerment by finding
-            possible employment opportunities and providing upskilling
-            courses to beneficiaries, thus enabling them to pursue careers
-            in various fields of their choice.</p>
-        <ul class="list-disc list-inside ml-4">
-          <li>The team successfully organized guidance sessions for
-            beneficiaries, which included career counseling,
-            motivational talks, and personalized guidance to help them
-            make informed decisions about their future.</li>
-          <li>Volunteers reached out to beneficiaries to understand their
-            employment needs and created a database to support
-            initiatives like BTTI.</li>
-          <li>Soft skills development workshops were conducted in
-            partnership with BTTI to help students improve their
-            communication and interpersonal skills.</li>
-        </ul>
+        <!-- Project 11 -->
+        <div class="project-card bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold text-2xl mb-4 text-yellow-700">Udaan</h3>
+          <p class="mb-4 text-gray-700">Project Udaan is aimed at youth empowerment by finding possible employment opportunities and providing upskilling courses to beneficiaries, thus enabling them to pursue careers in various fields of their choice.</p>
+          <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
+            <li>The team successfully organized guidance sessions for beneficiaries, which included career counseling, motivational talks, and personalized guidance to help them make informed decisions about their future.</li>
+            <li>Volunteers reached out to beneficiaries to understand their employment needs and created a database to support initiatives like BTTI.</li>
+            <li>Soft skills development workshops were conducted in partnership with BTTI to help students improve their communication and interpersonal skills.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="py-16 px-6 bg-yellow-50 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-10">Our Events</h2>
-    <ul class="list-disc text-lg space-y-4 ml-4">
-      <li><strong>Kadam:</strong> Nirmaan organized its annual flagship sports event, Kadam. It
-        was essentially meant for the constant engagement and
-        encouragement of the beneficiaries of Nirmaan. Around 150
-        students from 4+ schools participated in various athletic track
-        and field events, for example, the 100-meter race, long jump,
-        shuttle race, and many more, and Gym Grounds, BITS Pilani.
-        The winners of these events were awarded medals, and all
-        participants were given a certificate of participation.</li>
-      <li><strong>SORAD:</strong> Nirmaan’s annual fundraising event, Save One Rupee A Day
-        (SORAD), was held in February. Mess signings were conducted
-        in all the hostel messes. With over twenty-five volunteers
-        involved in the process, due to student community’s immense
-        support, this was one of most successful SORADs ever.</li>
-      <li><strong>APOGEE:</strong> The women empowerment stall showcased unique
-        handcrafted products made by women beneficiaries of
-        Project Swayamshakti. Products included keychains,
-        earrings, scrunchies, and coasters. Other items like denim
-        bags and wall hangings were also available for sale. This
-        initiative promoted handcrafted craftsmanship and
-        supported local artisans. A food stall with engaging challenges was also set up for
-        visitors to participate in groups and enjoy the fest.</li>
-      <li><strong>OASIS:</strong> Various products like tote bags, scrunchies, cushions, etc.
-        were made by projects Swayamshakti and Pragati and had
-        a positive reception from the BITS community.To engage visitors, food and games stall were also setup
-        with people going home taking various prizes.</li>
-      <li><strong>Yuvaan:</strong> Yuvaan is an event held in remembrance of Swami
-        Vivekananda, focusing on youth empowerment. Nirmaan in
-        collaboration with Fitbits, successfully organized a run that
-        saw enthusiastic participation from various members of the
-        community. A total of 50 individuals participated in the run including
-        faculty. The event received positive feedback. Motivational
-        speeches on youth empowerment, delivered by dedicated
-        volunteers, were a key feature with our faculty-in-charge
-        inspiring everyone with his insightful words. The run fostered a sense of community and teamwork,
-        leaving participants motivated and empowered to make a
-        difference.</li>
-      <li><strong>Joy of Giving Week:</strong> Joy of Giving Week is Nirmaan’s initiative to unite BITSians in
-        the spirit of ‘giving’ and the joy that emanates from it, both for
-        the giver and the receiver. Nirmaan organized a series of
-        events over the course of a week (from February 19th, 2024, to
-        February 25th, 2024) to encourage people to share love and joy
-        with those around them. The following events were
-        conducted: <strong>Inauguration:</strong>The inauguration of JOGW, held in the NAB
-        auditorium, was graced by the presence of Vice Chancellor,
-        Director along with other faculty. <br><strong>Garden of Queens:</strong>This day honored the women
-        beneficiaries of Nirmaan with an inspirational
-        documentary, games, refreshments, and mementos.<br>
-        <strong>Likhe Joh Khat Tujhe:</strong>Anonymous Message booths at
-        campus eateries were set up. This event was a huge success
-        as thousands of letters were delivered to the recipients’
-        hostel rooms.
-        <br> <strong>Ek Shaam Apke Naam:</strong>Nirmaan distributed food to mess
-        workers and provided tea to night guards on campus. This
-        gesture appreciated and acknowledged their hard work
-        and contribution to the community.<br>
-    </li>
-    <li><strong>Yeh Shaam Mastani:</strong>The event aimed to increase bonding
-        within Nirmaan and celebrate the volunteers’ work. With a
-        Retro Bollywood theme, attendees enjoyed a '90s vibe,
-        music, refreshments, and games. Prizes were awarded for
-        the best-dressed and the most game wins</li>
-    <li><strong>Khiladiyo ka Rangmanch: </strong>The KADAM Sports Meet
-        organized by Nirmaan featured around 100 students from
-        schools in and around Pilani. Participants received
-        certificates, winners got medals, and refreshments were
-        provided.</li>
-    <li><strong>Lecture vs Leisure:</strong>A cricket match was held at the
-        grounds near Med-C. Professors and students played
-        together, enjoying a day of friendly competition and shared
-        joy.</li>
-    </ul>
+  <!-- Events Section -->
+  <section id="events" class="py-16 px-6 bg-yellow-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4 relative inline-block">
+          <span class="relative z-10">Our Events</span>
+          <span class="absolute bottom-0 left-0 w-full h-2 bg-yellow-200 z-0" style="bottom: 5px;"></span>
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Explore the impactful events we've organized throughout the year</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Event 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">Kadam</h3>
+          <p class="text-gray-700">Nirmaan organized its annual flagship sports event, Kadam. It was essentially meant for the constant engagement and encouragement of the beneficiaries of Nirmaan. Around 150 students from 4+ schools participated in various athletic track and field events, for example, the 100-meter race, long jump, shuttle race, and many more, and Gym Grounds, BITS Pilani. The winners of these events were awarded medals, and all participants were given a certificate of participation.</p>
+        </div>
+        
+        <!-- Event 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">SORAD</h3>
+          <p class="text-gray-700">Nirmaan's annual fundraising event, Save One Rupee A Day (SORAD), was held in February. Mess signings were conducted in all the hostel messes. With over twenty-five volunteers involved in the process, due to student community's immense support, this was one of most successful SORADs ever.</p>
+        </div>
+        
+        <!-- Event 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">APOGEE</h3>
+          <p class="text-gray-700">The women empowerment stall showcased unique handcrafted products made by women beneficiaries of Project Swayamshakti. Products included keychains, earrings, scrunchies, and coasters. Other items like denim bags and wall hangings were also available for sale. This initiative promoted handcrafted craftsmanship and supported local artisans. A food stall with engaging challenges was also set up for visitors to participate in groups and enjoy the fest.</p>
+        </div>
+        
+        <!-- Event 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">OASIS</h3>
+          <p class="text-gray-700">Various products like tote bags, scrunchies, cushions, etc. were made by projects Swayamshakti and Pragati and had a positive reception from the BITS community.To engage visitors, food and games stall were also setup with people going home taking various prizes.</p>
+        </div>
+        
+        <!-- Event 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">Yuvaan</h3>
+          <p class="text-gray-700">Yuvaan is an event held in remembrance of Swami Vivekananda, focusing on youth empowerment. Nirmaan in collaboration with Fitbits, successfully organized a run that saw enthusiastic participation from various members of the community. A total of 50 individuals participated in the run including faculty. The event received positive feedback. Motivational speeches on youth empowerment, delivered by dedicated volunteers, were a key feature with our faculty-in-charge inspiring everyone with his insightful words. The run fostered a sense of community and teamwork, leaving participants motivated and empowered to make a difference.</p>
+        </div>
+        
+        <!-- Event 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">Joy of Giving Week</h3>
+          <p class="text-gray-700">Joy of Giving Week is Nirmaan's initiative to unite BITSians in the spirit of 'giving' and the joy that emanates from it, both for the giver and the receiver. Nirmaan organized a series of events over the course of a week (from February 19th, 2024, to February 25th, 2024) to encourage people to share love and joy with those around them. The following events were conducted: <strong>Inauguration:</strong>The inauguration of JOGW, held in the NAB auditorium, was graced by the presence of Vice Chancellor, Director along with other faculty. <br><strong>Garden of Queens:</strong>This day honored the women beneficiaries of Nirmaan with an inspirational documentary, games, refreshments, and mementos.<br>
+          <strong>Likhe Joh Khat Tujhe:</strong>Anonymous Message booths at campus eateries were set up. This event was a huge success as thousands of letters were delivered to the recipients' hostel rooms.
+          <br> <strong>Ek Shaam Apke Naam:</strong>Nirmaan distributed food to mess workers and provided tea to night guards on campus. This gesture appreciated and acknowledged their hard work and contribution to the community.<br>
+          </p>
+        </div>
+        
+        <!-- Event 7 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">Yeh Shaam Mastani</h3>
+          <p class="text-gray-700">The event aimed to increase bonding within Nirmaan and celebrate the volunteers' work. With a Retro Bollywood theme, attendees enjoyed a '90s vibe, music, refreshments, and games. Prizes were awarded for the best-dressed and the most game wins</p>
+        </div>
+        
+        <!-- Event 8 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">Khiladiyo ka Rangmanch</h3>
+          <p class="text-gray-700">The KADAM Sports Meet organized by Nirmaan featured around 100 students from schools in and around Pilani. Participants received certificates, winners got medals, and refreshments were provided.</p>
+        </div>
+        
+        <!-- Event 9 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-3 text-yellow-700">Lecture vs Leisure</h3>
+          <p class="text-gray-700">A cricket match was held at the grounds near Med-C. Professors and students played together, enjoying a day of friendly competition and shared joy.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Gratitude Section -->
-  <section class="py-16 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-semibold mb-6">Gratitude</h2>
-    <p class="text-lg">As Nirmaan celebrates another significant year, we take a
-        moment to pause and take in the significant contribution our
-        company has made to society and the lives of those we have
-        touched through our projects. Our hearts brim with gratitude
-        as we extend our sincerest appreciation to the dedicated
-        volunteers and project members who have selflessly devoted
-        their time and energy to uplifting our beneficiaries, becoming
-        catalysts for transformative social change. Moreover, we
-        express heartfelt thanks to our esteemed alumni, whose
-        unwavering support has propelled our ideas from mere
-        concepts to tangible realities. We also want to express our
-        deep appreciation to the BITS community for their steadfast
-        support and encouragement. It is through the collective efforts
-        and unwavering commitment of each individual involved that
-        we have been able to create a lasting, positive difference.
-        Together, we forge a path towards a brighter future, and for
-        that, we are eternally grateful.  </p>
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="bg-yellow-50 p-8 rounded-xl shadow-inner">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Gratitude</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          As Nirmaan celebrates another significant year, we take a moment to pause and take in the significant contribution our company has made to society and the lives of those we have touched through our projects. Our hearts brim with gratitude as we extend our sincerest appreciation to the dedicated volunteers and project members who have selflessly devoted their time and energy to uplifting our beneficiaries, becoming catalysts for transformative social change. Moreover, we express heartfelt thanks to our esteemed alumni, whose unwavering support has propelled our ideas from mere concepts to tangible realities. We also want to express our deep appreciation to the BITS community for their steadfast support and encouragement. It is through the collective efforts and unwavering commitment of each individual involved that we have been able to create a lasting, positive difference. Together, we forge a path towards a brighter future, and for that, we are eternally grateful.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8 px-6 text-center">
-    <p>Connect with us:</p>
-    <div class="mt-2 space-x-4">
-      <a href="https://fb.com/nirmaanpilanipage" class="underline">Facebook</a>
-      <a href="https://instagram.com/nirmaan.bppc" class="underline">Instagram</a>
-      <a href="https://nirmaanpilani.org" class="underline">Website</a>
+  <footer id="contact" class="bg-gray-800 text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-yellow-400">Nirmaan</h3>
+          <p class="mb-4">BITS Pilani Chapter</p>
+          <p>Empowering Through Education, Women Empowerment, and Community Development</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+          <div class="flex space-x-4 mb-6">
+            <a href="https://fb.com/nirmaanpilanipage" class="bg-yellow-600 hover:bg-yellow-700 text-white p-2 rounded-full transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/nirmaan.bppc" class="bg-yellow-600 hover:bg-yellow-700 text-white p-2 rounded-full transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://nirmaanpilani.org" class="bg-yellow-600 hover:bg-yellow-700 text-white p-2 rounded-full transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+              </svg>
+            </a>
+          </div>
+          
+          <div>
+            <h4 class="font-medium mb-2">Editorial Team:</h4>
+            <p class="text-sm text-gray-300">Shlok Jaiswal, Saanidhya Mittal, Navya Dhiman, Arpit Maity, Anuj Wagh, Ariana Rehman, Krishanansh Sood, Yash Chavan, Aaryan, Shea Kanungo</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p class="text-sm text-gray-400">&copy; 2024 Nirmaan, BITS Pilani Chapter. All rights reserved.</p>
+      </div>
     </div>
-    <p>Editorial Team:</p>
-    <p class="mt-4 text-sm">Shlok Jaiswal, Saanidhya Mittal,
-        Navya Dhiman, Arpit Maity, Anuj
-        Wagh, Ariana Rehman,
-        Krishanansh Sood, Yash Chavan,
-        Aaryan, Shea Kanungo</p>
-        <p class="mt-4 text-sm">&copy; 2024 Nirmaan, BITS Pilani Chapter</p>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-yellow-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <script>
+    // Back to Top Button
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.remove('opacity-100', 'visible');
+        backToTopButton.classList.add('opacity-0', 'invisible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Mobile menu toggle functionality would go here
+    // const mobileMenuButton = document.querySelector('.md\\:hidden');
+    // const mobileMenu = document.querySelector('.mobile-menu');
+    // 
+    // mobileMenuButton.addEventListener('click', () => {
+    //   mobileMenu.classList.toggle('hidden');
+    // });
+  </script>
 </body>
 </html>
